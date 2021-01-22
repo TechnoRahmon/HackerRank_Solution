@@ -22,4 +22,36 @@ function plusMinus(arr) {
     console.log(zero)
 }
 
-plusMinus([-4, 3 ,-9 ,0 ,4 ,1])
+//plusMinus([-4, 3 ,-9 ,0 ,4 ,1])
+
+
+//Its base and height are both equal to . It is drawn using # symbols and spaces. The last line is not preceded by any spaces.
+//Write a program that prints a staircase of size .
+
+
+function staircase(n) {
+        var x ='' ; 
+        var Sym = '';
+        var space= '';
+        for (var j =1 ; j<=n ; j++) {
+
+            for(let f =1; f <= j ; f++){
+                Sym = Sym +'#';
+                
+            }
+            for (var i=n-j; i > 0 ; i-- ){
+                space= space + '-';
+
+                }
+          
+            x = space +Sym
+            console.log(x);
+            space='';
+            Sym=''
+           
+        } 
+     
+        
+        
+    }
+    staircase(6)
